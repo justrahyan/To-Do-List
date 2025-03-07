@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2>To-Do List</h2>
+        <div class="menu">
+          <div class="search-container">
+            <input type="text" class="search-input" placeholder="Cari" />
+            <button class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="add-task">
+            <a href="tambah-tugas.html" class="add-button">
+              <i class="fas fa-plus"></i>
+              <span>Tambah</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sedang Berlangsung -->
+    <section id="berlangsung">
+      <div class="container">
+        <h3>Sedang Berlangsung</h3>
+        <hr />
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th><i class="fa-regular fa-square-check"></i></th>
+                <th>Nama Tugas</th>
+                <th>Deskripsi</th>
+                <th>Deadline</th>
+                <th>Kategori</th>
+                <th>Prioritas</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="data">
+                <td><input type="checkbox" /></td>
+                <td>Final Web Project</td>
+                <td>Project Web GDGOC UNM</td>
+                <td>10-03-2025</td>
+                <td>Kuliah</td>
+                <td><span class="priority medium">Sedang</span></td>
+                <td class="action-buttons">
+                  <a href="#" class="btn-view"><i class="fas fa-eye"></i></a>
+                  <a href="#" class="btn-delete"
+                    ><i class="fas fa-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr class="data">
+                <td><input type="checkbox" /></td>
+                <td>Pitch Deck</td>
+                <td>Project UI/UX GDGOC UNM</td>
+                <td>03-03-2025</td>
+                <td>Kuliah</td>
+                <td><span class="priority high">Tinggi</span></td>
+                <td class="action-buttons">
+                  <a href="#" class="btn-view"><i class="fas fa-eye"></i></a>
+                  <a href="#" class="btn-delete"
+                    ><i class="fas fa-trash"></i
+                  ></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selesai -->
+    <section id="selesai">
+      <div class="container">
+        <h3>Selesai</h3>
+        <hr />
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th><i class="fa-regular fa-square-check"></i></th>
+                <th>Nama Tugas</th>
+                <th>Deskripsi</th>
+                <th>Deadline</th>
+                <th>Kategori</th>
+                <th>Prioritas</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="data">
+                <td><input type="checkbox" checked disabled /></td>
+                <td>Final Web Project</td>
+                <td>Project Web GDGOC UNM</td>
+                <td>10-03-2025</td>
+                <td>Kuliah</td>
+                <td><span class="priority medium">Sedang</span></td>
+                <td class="action-buttons">
+                  <a href="#" class="btn-view"><i class="fas fa-eye"></i></a>
+                  <a href="#" class="btn-delete"
+                    ><i class="fas fa-trash"></i
+                  ></a>
+                </td>
+              </tr>
+              <tr class="data">
+                <td><input type="checkbox" checked disabled /></td>
+                <td>Pitch Deck</td>
+                <td>Project UI/UX GDGOC UNM</td>
+                <td>03-03-2025</td>
+                <td>Kuliah</td>
+                <td><span class="priority high">Tinggi</span></td>
+                <td class="action-buttons">
+                  <a href="#" class="btn-view"><i class="fas fa-eye"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Author: <span class="author">Muhammad Rahyan Noorfauzan</span>,
+        <span class="author">Nur Hidayat</span> &
+        <span class="author">Jumiati</span>
+      </p>
+      <p>© To-Do List. 2025</p>
+    </footer>
+  </body>
+</html>
